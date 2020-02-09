@@ -28,8 +28,14 @@ import React from 'react';
 
 const Ninjas = ({ninjas}) => {
     const ninjaList = ninjas.map(ninja => {
-        ninja.age > 20 ? () : null;
-    })
+        return ninja.age > 25 ? (
+            <div className = 'ninja' key = {ninja.id} >
+                <div> Name: { ninja.name }</div>
+                <div> Age: { ninja.age } </div>
+                <div> Hair Colour: { ninja.haircolor } </div>
+            </div>
+        ) : null;
+    });
     return (
         <div className = 'ninja-list'>
             { ninjaList }
@@ -38,3 +44,4 @@ const Ninjas = ({ninjas}) => {
 }
 
 export default Ninjas;
+
