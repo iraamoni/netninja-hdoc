@@ -1,7 +1,7 @@
 import React from 'react';
 import App from './App';
 
-const Ninjas = ({ninjas}) => {
+const Ninjas = ({ninjas, deleteNinja}) => {
     const ninjaList = ninjas.map(ninja => {
         if (ninja.age > 24) {
             return (
@@ -9,6 +9,7 @@ const Ninjas = ({ninjas}) => {
                     <div> Name: { ninja.name }</div>
                     <div> Age: { ninja.age } </div>
                     <div> Hair Colour: { ninja.haircolor } </div>
+                    <button onClick = {() => {deleteNinja(ninja.id)}}>Delete Ninja</button>
                 </div>
             )
         } else {
