@@ -1,0 +1,9 @@
+body {
+    background: pink;
+    transition: all 1s;
+}
+
+.ninja form {
+    background: #fff;
+    padding: 20px;
+}
