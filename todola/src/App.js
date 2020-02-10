@@ -7,7 +7,7 @@ class App extends Component {
             {id: 1, content: 'milk'},
             {id: 2, content: 'Potato'},
             {id: 3, content: 'Coconut'},
-            {id: 4, content: 'Chocolate'}
+            {id: 4, content: 'Chocolate'},
         ]
     }
 
@@ -25,7 +25,7 @@ class App extends Component {
     render() {
         return (
             <div className = 'todo-app container'>
-                <h1 className = 'center blue-text'>Todo's</h1> 
+                <h4 className = 'center white-text card-panel teal lighten-1 z-depth-1'>Todola</h4> 
                 <Todos todos = { this.state.todos } deleteTodo = {this.deleteTodo} />
             </div>
         );
