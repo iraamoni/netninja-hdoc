@@ -5,7 +5,7 @@ const Todos = ({todos, deleteTodo}) => {
     const todoList = todos.length ? (
         todos.map((todo) => {
             return (
-                <li onClick = { () => {deleteTodo(todo.id)} } className="collection-item">{todo.content}</li>
+                <li  key = { todo.id } onClick = { () => {deleteTodo(todo.id)} } className="collection-item">{todo.content}</li>
             )
         })
     ) : (
