@@ -1,9 +1,74 @@
 body {
-  margin: 0;
-  font-family: 'Nunito'
+    margin: 0;
+    font-family: 'Nunito'
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Navigation bar */
+.nav-wrapper {
+    margin-bottom: 30px;
+}
+
+/* post card directly */
+.post.card {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 32%;
+    margin-right: 1.2%;
+    box-shadow:
+        0 2px 2px 0 rgba(137, 137, 137, 0.06),
+        0 3px 1px -2px rgba(131, 131, 131, 0.19),
+        0 1px 5px 0 rgba(142, 142, 142, 0.19)
+}
+
+/* card inside the post */
+.post .card {
+    position: relative;
+}
+
+.post.card .card-content {
+    padding-left: 24px;
+    padding-top: 12px;
+}
+
+/* title inside the post card */
+.post.card .card-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* //home cards */
+.container.post-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.post.card .card-content .card-title {
+    /* margin-bottom: 8px; */
+    line-height: 2rem;
+}
+
+/* container size */
+.post.card.medium {
+    height: 400px;
+}
+
+.card-action {
+    font-weight: bold;
+}
+
+.card-action .material-icons {
+    margin-left: 5px;
+    color: #3f51b5;
+}
+
+.brand-logo, .menu-list {
+    font-weight: bold;
+}
+
+

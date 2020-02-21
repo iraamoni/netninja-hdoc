@@ -6,10 +6,10 @@ const Navbar = (props) => {
     //     props.history.push('/about')
     // }, 2000);
     return (
-        <nav className="nav-wrapper indigo darken-3">
+        <nav className="nav-wrapper indigo">
             <div className="container">
-                <a className="brand-logo">dupla</a>
-                <ul className='right'>
+                <a className="brand-logo">Zooo</a>
+                <ul className='menu-list right'>
                     <li><Link to = '/'>Home</Link></li>
                     <li><NavLink to = '/about'>About</NavLink></li>
                     <li><NavLink to = '/contact'>Contact</NavLink></li>
