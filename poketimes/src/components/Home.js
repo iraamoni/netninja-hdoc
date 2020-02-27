@@ -40,10 +40,12 @@ class Home extends Component {
             posts.map(post => {
                 return (
                     <div className="post card sticky-action medium z-depth-1" key= {post.id}>
+
                         {/* image section */}
                         <div className="card-image waves-effect waves-light">
                             <img className="activator" src="https://source.unsplash.com/random"/>
                         </div>
+
                         {/* card content section */}
                         <div className="card-content">
                             {/* <Link to = {'/' + post.id}> */}
@@ -60,15 +62,13 @@ class Home extends Component {
                                     <p className='right pink-text darken-1'>read all</p>
                                 </span>
                             </Link>
-
                         </div>
+
                         {/* Reveal Card section */}
                         <div className="card-reveal">
-                            {/* <Link to = {'/' + post.id}> */}
                                 <span className="card-title indigo-text">
                                     {post.title}
                                 </span>
-                            {/* </Link> */}
                             <p>
                                 {post.body}
                             </p>
