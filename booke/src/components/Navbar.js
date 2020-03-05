@@ -9,10 +9,11 @@ const Navbar = () => {
                 Bookē
             </h1>
             <p>
-                Currently you have  { books.length } books to get through!
+                Currently, you have  <strong>{ books.length } {books.length > 1 ? 'books' : 'book'} </strong> to get through!
             </p>
         </div>
     );
 }
 
 export default Navbar;
+

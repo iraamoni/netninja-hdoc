@@ -3,26 +3,32 @@ body {
     font-family: "Raleway", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: rgb(143, 182, 146);
+    background: rgb(72, 104, 152);
 }
 
 .App {
-    background: rgb(114, 152, 118);
+    background: rgb(63, 91, 133);
     margin: 20px auto;
     width: 90%;
     max-width: 700px;
     color: #eee;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .navbar {
     padding: 10px 20px;
     text-align: center;
-    background: rgb(73, 108, 77);
+    background:  rgb(27, 45, 72);
 }
 
 .navbar h1 {
     margin: 10px 0;
+}
+
+.navbar p {
+    font-weight: 300;
+    margin-top: 0;
 }
 
 .book-list {
@@ -31,12 +37,12 @@ body {
 }
 
 .book-list ul {
-    padding: 5px 20px 30px 20px;
+    padding: 5px 20px 10px 20px;
     list-style-type: none;
 }
 
 .book-list li {
-    background: rgb(73, 108, 77);
+    background: rgb(42, 66, 103);
     border-radius: 10px;
     padding: 30px;
     cursor: pointer;
@@ -67,15 +73,15 @@ body {
     font-weight: 600;
 }
 
-form{
+form {
     padding: 10px 20px 20px 20px;
-    background-color:  rgb(73, 108, 77);
+    background-color:  rgb(42, 66, 103);
 }
 
-input[type='text']{
+input[type='text'] {
     width: 95%;
     box-sizing: border-box;
-    background:  rgb(114, 152, 118);
+    background:  rgb(63, 91, 133);
     color: #fff;
     border: 0;
     border-radius: 10px;
@@ -85,9 +91,9 @@ input[type='text']{
     font-size: larger;
 }
 
-input[type='submit']{
-    margin: 10px auto;
-    background:rgb(114, 152, 118);
+input[type='submit'] {
+    margin: 10px auto 20px;
+    background: rgb(27, 45, 72);
     border-radius: 30px;
     color: #fff;
     border: 0;
@@ -105,7 +111,6 @@ input[type='submit']{
 }
 
 .form-enter-title {
-    padding-left: 20px;
-    padding-bottom: 5px;
+    padding: 10px 0px 10px 20px;
     font-size: larger;
 }
